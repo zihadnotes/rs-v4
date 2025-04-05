@@ -68,6 +68,39 @@ header a {
   color: var(--secondary-color);
   font-weight: 500;
 }
+.main-menu li {
+  position: relative;
+}
+.main-menu > li > a {
+  padding: 10px 0;
+  transition: 0.3s;
+}
+.main-menu > li > a:hover {
+  color: var(--primary-color);
+}
+.main-menu > li > a > i {
+  font-size: 12px;
+}
+.dropdown {
+  position: absolute;
+  padding: 20px 16px 16px 16px;
+  background-color: white;
+  width: 180px;
+  display: none;
+}
+.dropdown li a {
+  padding: 6px 0;
+}
+header a.btn {
+  padding: 14px 34px;
+}
+header a.btn:hover {
+  color: white;
+}
+
+.main-menu > li:hover .dropdown {
+  display: block;
+}
 
 /* Banner Area */
 .banner {
